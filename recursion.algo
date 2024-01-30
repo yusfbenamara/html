@@ -1,0 +1,17 @@
+FUNCTION palindrome(str) : BOOLEAN
+VAR
+    i, longeur : INTEGER
+BEGIN
+    longeur := str.length 
+    IF (longeur=0 OR longeur=1) THEN
+        RETURN true;
+    END_IF
+    IF ((str[0]=str[longeur-1])) THEN
+       FOR i FROM 1 TO longeur-2 DO
+        newstr[i-1]:=str[i];
+       END_FOR 
+       palindrome(str);
+    ELSE
+     RETURN false;
+     END_IF
+END
